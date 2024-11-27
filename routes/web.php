@@ -5,6 +5,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('template');
 });
+Route::view('/panel','panel.index')->name('panel');
+// Route::get('/panel', function (){
+//     return view('panel.index')->name('panel');
+// });
 
 Route::get('/login', function (){
     return view('auth.login');
